@@ -1,0 +1,433 @@
+/* GENERAL */
+
+:root
+{
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+    padding: 0px 50px;
+    font-weight: 450;
+}
+
+h1
+{
+    font-size: 170%;
+}
+
+h2
+{
+    font-size: 150%;
+}
+
+/* HEADER */
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo 
+{
+    padding: 25px 0px;
+}
+
+header #logo img 
+{
+    width: 150px;
+}
+
+header nav ul 
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li 
+{
+    padding: 50px 25px;
+    border-top: 3px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover 
+{
+    border-color: var(--blue);
+}
+
+header nav ul li a 
+{
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a 
+{
+    color: var(--blue);
+}
+
+/* BARRE DE RECHERCHE  */
+
+#search h1
+{
+    margin-bottom: 15px;
+}
+
+#search .subtitle
+{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.searchbox
+{
+    display: inline-block;
+    border: solid 1px var(--grey);
+    border-radius: 15px;
+    width: auto;
+}
+
+.searchbox input
+{
+    border: none;
+    height: 40px;
+}
+
+.searchbox .fa-map-marker-alt
+{
+    padding: 0px 11px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    background-color: var(--grey);
+    border-radius: 11px 0px 0px 11px;
+}
+
+.searchbox button
+{
+    border: none;
+    background-color: var(--blue);
+    padding: 0px 11px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 0px 11px 11px 0px;
+}
+
+.searchbox button span
+{
+    font-weight: bold;
+    color: white;
+}
+
+.searchbox button i
+{
+    display: none;
+}
+
+/* FILTRES */
+
+#filter
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#filter .filter_bloc
+{
+    display: flex;
+    align-items: center;
+    border: solid 3px var(--grey);
+    margin: 0px 30px;
+    border-radius: 30px;
+}
+
+#filter .filter_bloc a
+{
+    padding-left: 15px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#filter .filter_bloc i
+{
+    display: flex;
+    padding: 18px;
+    border-radius: 100px;
+    background-color: var(--light-blue);
+    color: var(--blue);
+}
+
+#filter .filter_bloc:hover
+{
+    background-color: var(--light-blue);
+}
+
+#filter .filter_bloc:hover i
+{
+    background-color: white;
+}
+
+/* INFO */
+
+#info p
+{
+    display: flex;
+    align-items: center;
+}
+
+#info i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border: solid 2px var(--grey);
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+    color: var(--blue);
+}
+
+/* HEBERGEMENTS */
+
+#accomodation
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#accomodation .marseille_accomodation h2
+{
+    margin-left: 36px;
+}
+
+#accomodation article:hover
+{
+    box-shadow: 5px 5px 5px rgb( 199, 199, 199);
+}
+
+#accomodation article:hover .price
+{
+    font-weight: bold;
+}
+
+.marseille_accomodation
+{
+    background-color: var(--grey);
+    box-sizing: content-box;
+    margin-right: 30px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.accomodation_list
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13px;
+}
+
+.accomodation_list a
+{
+    width: 33%;
+    text-decoration: none;
+    color: black;
+}
+
+.accomodation_list a article
+{
+    background-color: white;
+    margin: 20px 20px;
+    padding: 8px;
+    border-radius: 25px;
+    height: 84%;
+}
+
+.accomodation_list a article img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.accomodation_list .article_content
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.more a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 36px;
+}
+
+.fa-star.blue
+{
+    color: var(--blue);
+}
+
+.fa-star.grey
+{
+    color: var(--grey);
+}
+
+/* POPULAIRES */
+
+#famous
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--grey);
+    border-radius: 25px;
+    height: 100%;
+}
+
+.famous_title
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#famous .famous_title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.famous_list
+{
+    margin-top: 12px;
+    height: 100%;
+    margin-top: -20px;
+}
+
+.famous_list a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.famous_list article
+{   
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: white;
+    padding: 8px;
+    border-radius: 25px;
+    height: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px; 
+}
+
+.famous_list article img
+{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px 0px 0px 25px;
+    margin-right: 15px;
+}
+
+/* ACTIVITEES */
+
+#activity
+{
+    margin-bottom: 20px;
+}
+
+.activity_list
+{
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+}
+
+.activity_list .column
+{
+    width: 23%;
+}
+
+.activity_list .column article
+{
+    box-shadow: 0px 0px 10px 0px rgb( 199, 199, 199);
+    margin-bottom: 20px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.activity_list article img
+{
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activity_list .big
+{
+    height: 630px;
+}
+
+.activity_list .short
+{
+    height: 305px;
+}
+
+.activity_list a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.activity_list h3
+{
+    margin-left: 15px;
+}
+
+/* FOOTER */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 450px;
+}
+
+footer .footer_bloc
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}

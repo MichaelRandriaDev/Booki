@@ -1,0 +1,58 @@
+/* FILTRES */
+
+#filter
+{
+    flex-wrap: wrap;
+}
+
+.filter_bloc
+{
+    margin: 10px;
+}
+
+/* HEBERGEMENTS */
+
+#accomodation
+{
+    flex-direction: column;
+}
+
+#accomodation .marseille_accomodation
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* POPULAIRES */
+
+#famous .famous_title
+{
+    margin-left: 40px;
+}
+
+#famous .famous_list
+{
+    margin-top: -30px;
+    padding-bottom: 30px;
+}
+
+/* ACTIVITEES */
+
+#activity .activity_list
+{
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#activity .activity_list .column
+{
+    width: 48%;
+}
+
+/* FOOTER */
+
+footer
+{
+    justify-content: space-between;
+    padding-right: 200px;
+}
